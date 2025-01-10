@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetCode Helper</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="app">
+        <h1>LeetCode Helper</h1>
+        <div id="test-cases">
+            <h2>Fetched Test Cases</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script>
+        const vscode = acquireVsCodeApi();
+        window.addEventListener("message", (event) => {
+            const { type, data } = event.data;
+            if (type === "testCases") {
+                document.getElementById("output").textContent = data;
+            }
+        });
+    </script>
+</body>
+</html>

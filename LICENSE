@@ -1,0 +1,15 @@
+
+---
+
+### **API_USAGE.md**
+
+```markdown
+# Backend API Usage Documentation
+
+## Fetching Problems from LeetCode
+
+### Script: `src/backend/fetch_problem.py`
+
+Run the script:
+```bash
+python3 src/backend/fetch_problem.py <problem-url>

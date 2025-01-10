@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Backend Tests",
+            "type": "shell",
+            "command": "python3",
+            "args": ["-m", "unittest", "discover", "-s", "tests", "-p", "*_tests.py"],
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Compile TypeScript",
+            "type": "shell",
+            "command": "npx",
+            "args": ["tsc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$tsc"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Run Extension",
+            "type": "shell",
+            "command": "code",
+            "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+            "problemMatcher": []
+        }
+    ]
+}

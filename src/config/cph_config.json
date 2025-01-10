@@ -1,0 +1,17 @@
+{
+    "languages": {
+        "cpp": {
+            "compile": "g++ -std=c++17 -O2 -o $FNAME_NOEXT $FNAME",
+            "run": "$DIR/$FNAME_NOEXT"
+        },
+        "python": {
+            "compile": "",
+            "run": "python3 $FNAME"
+        }
+    },
+    "inputFile": "tests/test_cases/input_1.txt",
+    "outputFile": "tests/test_cases/output_1.txt",
+    "compareOutput": true,
+    "keepGeneratedFiles": false
+}
+

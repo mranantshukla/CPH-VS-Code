@@ -1,0 +1,39 @@
+project-root/
+│
+├── src/                      # Source code for the project
+│   ├── backend/              # Backend logic (e.g., fetching problem details)
+│   │   ├── fetch_problem.py  # Script to fetch problem details using GraphQL
+│   │   ├── utils.py          # Utility functions (e.g., URL parsing, JSON handling)
+│   │   └── __init__.py       # Makes the folder a Python module
+│   │
+│   ├── frontend/             # VS Code extension-related files
+│   │   ├── extension.js      # Main extension logic (JavaScript/TypeScript)
+│   │   ├── commands.js       # VS Code commands for fetching and running test cases
+│   │   └── webview/          # Optional GUI files for VS Code webview
+│   │       ├── index.html    # HTML file for webview GUI
+│   │       └── styles.css    # CSS for the webview
+│   │
+│   └── config/               # Configuration files
+│       ├── cph_config.json   # CPH extension language-specific commands
+│       └── settings.json     # Project-specific settings
+│
+├── tests/                    # Test cases for your project
+│   ├── backend_tests.py      # Unit tests for backend components
+│   ├── integration_tests.py  # Integration tests
+│   └── test_cases/           # Fetched LeetCode test cases for testing
+│       ├── input_1.txt       # Sample input file
+│       └── output_1.txt      # Sample output file
+│
+├── docs/                     # Documentation
+│   ├── README.md             # Main documentation for the GitHub repository
+│   └── API_USAGE.md          # Detailed instructions for backend API usage
+│
+├── .vscode/                  # VS Code-specific settings
+│   ├── tasks.json            # Custom build/run tasks for the extension
+│   └── launch.json           # Debugging configuration
+│
+├── .gitignore                # Files to ignore in GitHub repo
+├── LICENSE                   # Project license
+├── requirements.txt          # Python dependencies
+├── package.json              # Node.js dependencies for the extension
+└── setup.py                  # Python setup script (optional for packaging)

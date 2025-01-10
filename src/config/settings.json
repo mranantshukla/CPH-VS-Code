@@ -1,0 +1,33 @@
+{
+    "leetcode-helper": {
+        "backend": {
+            "pythonPath": "python3",
+            "fetchProblemScript": "src/backend/fetch_problem.py"
+        },
+        "testCases": {
+            "directory": "tests/test_cases",
+            "inputPrefix": "input_",
+            "outputPrefix": "output_",
+            "defaultLanguage": "python"
+        },
+        "extensionSettings": {
+            "showWebview": true,
+            "enableErrorLogging": true
+        }
+    },
+    "editor": {
+        "tabSize": 4,
+        "insertSpaces": true,
+        "formatOnSave": true
+    },
+    "terminal": {
+        "integrated": {
+            "shell": {
+                "linux": "/bin/bash",
+                "windows": "cmd.exe",
+                "osx": "/bin/zsh"
+            }
+        }
+    }
+}
+
